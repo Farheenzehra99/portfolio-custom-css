@@ -1,0 +1,34 @@
+.footer-container {
+    background-color: #120355;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #1e90ff; /* Blue color on hover */
+  }
+  
+  .footer-rights {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  

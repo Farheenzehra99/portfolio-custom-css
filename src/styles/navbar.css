@@ -1,0 +1,106 @@
+/* navbar.css */
+
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(18, 18, 18, 0.4); /* Semi-transparent background */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Navbar content */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper {
+  width: 64px; /* Adjust as per design */
+  height: 64px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.logo-wrapper:hover {
+  box-shadow: 0 0 8px 6px rgba(252, 27, 90, 0.7);
+}
+
+.logo-image {
+  border-radius: 50%;
+}
+
+/* Menu toggle (hamburger and close icons) */
+.menu-toggle {
+  display: block;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-button:hover {
+  color: #ec5580;
+  border-color: #2406c9;
+}
+
+.menu-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+/* Desktop navigation links */
+.navbar-links-desktop {
+  display: none; /* Hidden on mobile */
+}
+
+.navbar-links-list {
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 2rem;
+  list-style: none;
+}
+
+.navbar-link-item a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-link-item a:hover {
+  color: #fc1b5a;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .navbar-links-desktop {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none; /* Hide menu toggle on desktop */
+  }
+}
